@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eid al-Adha Mubarak - Traditions, Meaning & Celebration</title>
+<meta name="description" content="Discover the spiritual significance, four pillars (prayer, sacrifice, giving, together), and global traditions of Eid al-Adha. Learn about the holy day of gratitude and Qurbani.">
+<meta name="keywords" content="Eid al-Adha, Eid Mubarak, Qurbani, Festival of Sacrifice, Hajj, Islamic traditions, Eid prayer, Eid traditions across the world">
+<meta name="author" content="Eid al-Adha Mubarak">
+<meta property="og:title" content="Eid al-Adha Mubarak - Traditions, Meaning & Celebration">
+<meta property="og:description" content="Discover the spiritual significance, four pillars, and global traditions of Eid al-Adha.">
+<meta property="og:image" content="Eid-al-adha-fav.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Eid al-Adha Mubarak - Traditions, Meaning & Celebration">
+<meta name="twitter:description" content="Discover the spiritual significance, four pillars, and global traditions of Eid al-Adha.">
+<link rel="icon" type="image/png" href="Eid-al-adha-fav.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  :root {
+    --gold: #C8923A;
+    --gold-light: #E8C47A;
+    --gold-pale: #F5E6C8;
+    --green-deep: #1A3A2A;
+    --green-mid: #2D5A3D;
+    --green-light: #4A7C5A;
+    --cream: #FAF6EE;
+    --cream-dark: #F0E8D8;
+    --text-dark: #1A1A14;
+    --text-mid: #3A3228;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ── GEOMETRIC PATTERN SVG ── */
+  .pattern-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.06;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(200,146,58,0.12) 0%, transparent 70%);
+    z-index: -1;
+  }
+
+  .moon-crescent {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2rem;
+    animation: floatMoon 6s ease-in-out infinite;
+  }
+
+  @keyframes floatMoon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  .hero-tagline {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+    letter-spacing: 0.35em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.3s forwards;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(3.5rem, 9vw, 7rem);
+    line-height: 1.05;
+    color: var(--green-deep);
+    margin-bottom: 0.4rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.5s forwards;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    font-weight: 300;
+    color: var(--green-mid);
+    letter-spacing: 0.04em;
+    margin-bottom: 2.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.7s forwards;
+  }
+
+  .arabic-greeting {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 400;
+    color: var(--gold);
+    direction: rtl;
+    letter-spacing: 0.02em;
+    margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.9s forwards;
+  }
+
+  .hero-divider {
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto 3rem;
+    opacity: 0;
+    animation: fadeIn 1s 1.1s forwards;
+  }
+
+  .hero-cta {
+    display: inline-block;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green-deep);
+    border: 1px solid var(--gold);
+    padding: 0.9rem 2.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeUp 0.8s 1.2s forwards;
+  }
+
+  .hero-cta:hover {
+    background: var(--green-deep);
+    color: var(--gold-light);
+    border-color: var(--green-deep);
+  }
+
+  /* ── SCROLL INDICATOR ── */
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    opacity: 0;
+    animation: fadeIn 1s 2s forwards;
+  }
+
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollLine 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollLine {
+    0% { transform: scaleY(0); transform-origin: top; opacity: 1; }
+    50% { transform: scaleY(1); transform-origin: top; }
+    100% { transform: scaleY(1); transform-origin: bottom; opacity: 0; }
+  }
+
+  /* ── SECTION BASE ── */
+  section {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── PILLAR SECTION ── */
+  .pillars {
+    background: var(--green-deep);
+    padding: 6rem 2rem;
+    color: var(--cream);
+  }
+
+  .section-label {
+    text-align: center;
+    font-size: 0.72rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    text-align: center;
+    color: var(--cream);
+    margin-bottom: 4rem;
+    line-height: 1.3;
+  }
+
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .pillar-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,146,58,0.2);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+
+  .pillar-card:hover {
+    background: rgba(200,146,58,0.08);
+  }
+
+  .pillar-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .pillar-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--gold-light);
+    margin-bottom: 0.6rem;
+  }
+
+  .pillar-text {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgba(250,246,238,0.65);
+    line-height: 1.7;
+  }
+
+  /* ── MEANING SECTION ── */
+  .meaning {
+    padding: 7rem 2rem;
+    background: var(--cream);
+  }
+
+  .meaning-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .quote-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 6rem;
+    line-height: 0.5;
+    color: var(--gold-pale);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .meaning-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--green-deep);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .meaning-attr {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* ── TRADITIONS ── */
+  .traditions {
+    background: var(--cream-dark);
+    padding: 6rem 2rem;
+  }
+
+  .traditions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .tradition-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tradition-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--gold);
+    opacity: 0.7;
+    line-height: 1;
+    margin-bottom: -0.5rem;
+  }
+
+  .tradition-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--green-deep);
+    margin-bottom: 0.6rem;
+  }
+
+  .tradition-desc {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: var(--text-mid);
+    line-height: 1.8;
+  }
+
+  .tradition-line {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1rem 0;
+  }
+
+  /* ── GREETING SECTION ── */
+  .greeting {
+    background: var(--green-deep);
+    padding: 7rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .greeting::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(200,146,58,0.1) 0%, transparent 70%);
+  }
+
+  .greeting-main {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-weight: 300;
+    color: var(--cream);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  .greeting-main span {
+    color: var(--gold-light);
+  }
+
+  .greeting-sub {
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(250,246,238,0.5);
+    position: relative;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--text-dark);
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
+
+  .footer-crescent {
+    width: 24px;
+    opacity: 0.4;
+    margin-bottom: 1rem;
+  }
+
+  footer p {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    color: rgba(250,246,238,0.3);
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── GOLD ORNAMENT ── */
+  .ornament {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .ornament-line {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+  }
+
+  .ornament-diamond {
+    width: 6px;
+    height: 6px;
+    background: var(--gold);
+    transform: rotate(45deg);
+  }
+</style>
+</head>
+<body>
+
+<!-- Fixed geometric pattern background -->
+<svg class="pattern-bg" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="geo" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <polygon points="40,2 78,22 78,58 40,78 2,58 2,22" fill="none" stroke="#C8923A" stroke-width="0.8"/>
+      <polygon points="40,16 64,30 64,50 40,64 16,50 16,30" fill="none" stroke="#C8923A" stroke-width="0.5"/>
+      <circle cx="40" cy="40" r="4" fill="none" stroke="#C8923A" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#geo)"/>
+</svg>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <svg class="moon-crescent" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="40" cy="40" r="28" fill="#C8923A" opacity="0.15"/>
+    <path d="M40 14C26.7 14 16 24.7 16 38C16 51.3 26.7 62 40 62C33 56 28 47.6 28 38C28 28.4 33 20 40 14Z" fill="#C8923A"/>
+    <circle cx="55" cy="22" r="3" fill="#E8C47A"/>
+    <circle cx="62" cy="30" r="1.5" fill="#E8C47A" opacity="0.6"/>
+    <circle cx="58" cy="15" r="1" fill="#E8C47A" opacity="0.4"/>
+  </svg>
+
+  <p class="hero-tagline">Blessed Days of Sacrifice &amp; Gratitude</p>
+
+  <h1 class="hero-title">Eid al-<em>Adha</em></h1>
+
+  <p class="hero-subtitle">عيد الأضحى المبارك</p>
+
+  <p class="arabic-greeting">كل عام وأنتم بخير</p>
+
+  <div class="hero-divider"></div>
+
+  <a href="#pillars" class="hero-cta">Explore the spirit</a>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ── PILLARS ── -->
+<section class="pillars" id="pillars">
+  <p class="section-label reveal">The Heart of the Occasion</p>
+  <h2 class="section-title reveal">Four pillars of <em style="font-style:italic; color:var(--gold-light);">Eid al-Adha</em></h2>
+
+  <div class="pillars-grid">
+    <div class="pillar-card reveal">
+      <span class="pillar-icon">🕌</span>
+      <p class="pillar-name">Prayer</p>
+      <p class="pillar-text">Gathering at dawn for communal Eid prayer, a powerful moment of unity and devotion across the Muslim world.</p>
+    </div>
+    <div class="pillar-card reveal">
+      <span class="pillar-icon">🌙</span>
+      <p class="pillar-name">Sacrifice</p>
+      <p class="pillar-text">Commemorating Ibrahim's devotion through the ritual of Qurbani — an act of submission and remembrance.</p>
+    </div>
+    <div class="pillar-card reveal">
+      <span class="pillar-icon">🤝</span>
+      <p class="pillar-name">Giving</p>
+      <p class="pillar-text">Distributing meat generously — one-third kept, one-third shared with neighbours, one-third given to those in need.</p>
+    </div>
+    <div class="pillar-card reveal">
+      <span class="pillar-icon">❤️</span>
+      <p class="pillar-name">Togetherness</p>
+      <p class="pillar-text">Families and communities gathering, sharing meals, exchanging warm wishes, and strengthening bonds.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── MEANING ── -->
+<section class="meaning">
+  <div class="meaning-inner">
+    <div class="ornament reveal">
+      <div class="ornament-line"></div>
+      <div class="ornament-diamond"></div>
+      <div class="ornament-line"></div>
+    </div>
+    <span class="quote-mark reveal">"</span>
+    <p class="meaning-quote reveal">
+      It is not their meat nor their blood that reaches Allah — it is your piety that reaches Him.
+    </p>
+    <p class="meaning-attr reveal">Al-Quran, Surah Al-Hajj 22:37</p>
+  </div>
+</section>
+
+<!-- ── TRADITIONS ── -->
+<section class="traditions">
+  <p class="section-label reveal">How We Celebrate</p>
+  <h2 class="section-title reveal" style="color:var(--green-deep);">Traditions across the world</h2>
+
+  <div class="traditions-grid">
+    <div class="tradition-item reveal">
+      <p class="tradition-num">01</p>
+      <div class="tradition-line"></div>
+      <p class="tradition-title">New Clothes</p>
+      <p class="tradition-desc">Wearing new or finest clothes is a cherished tradition that symbolises renewal and joy as families step out for morning prayers.</p>
+    </div>
+    <div class="tradition-item reveal">
+      <p class="tradition-num">02</p>
+      <div class="tradition-line"></div>
+      <p class="tradition-title">Festive Feasts</p>
+      <p class="tradition-desc">Tables brimming with slow-cooked lamb, fragrant rice, sweet pastries, and traditional dishes passed down through generations.</p>
+    </div>
+    <div class="tradition-item reveal">
+      <p class="tradition-num">03</p>
+      <div class="tradition-line"></div>
+      <p class="tradition-title">Visiting Loved Ones</p>
+      <p class="tradition-desc">Travelling across cities and countries to be with family, exchange warm Eid greetings, and share in the blessings of the day.</p>
+    </div>
+    <div class="tradition-item reveal">
+      <p class="tradition-num">04</p>
+      <div class="tradition-line"></div>
+      <p class="tradition-title">Charitable Acts</p>
+      <p class="tradition-desc">Going beyond Qurbani — volunteering, donating, and helping neighbours as an expression of gratitude for one's blessings.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── GREETING ── -->
+<section class="greeting">
+  <p class="greeting-main reveal">
+    Wishing you <span>joy</span>,<br>peace &amp; <span>blessings</span>
+  </p>
+  <p class="greeting-sub reveal">Eid Mubarak to you and yours</p>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <svg class="footer-crescent" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 3C8.1 3 5 6.1 5 10C5 13.9 8.1 17 12 17C9.7 14.8 8.5 12.1 8.5 10C8.5 7.9 9.7 5.2 12 3Z" fill="#E8C47A"/>
+  </svg>
+  <p>عيد الأضحى المبارك &nbsp;·&nbsp; May this blessed day bring peace to every home</p>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
